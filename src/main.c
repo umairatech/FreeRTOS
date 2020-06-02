@@ -19,7 +19,7 @@ int main(void){
 
 	xTaskCreate(vTaskHandler1,"Task-1",configMINIMAL_STACK_SIZE,NULL,2,&xTaskHandle1);
 	xTaskCreate(vTaskHandler2,"Task-2",configMINIMAL_STACK_SIZE,NULL,2,&xTaskHandle2);
-
+	vTaskStartScheduler();
 	return 0;
 }
 
